@@ -1,0 +1,89 @@
+.\" Manpage for devilutionx
+.TH man 1 "Thu Jul 15 2021" "1.2.1" "devilutionx man page"
+.SH NAME
+\fBdevilutionx\fR \- Diablo devolved - magic behind the 1996 computer game
+.SH SYNOPSIS
+\fBdevilutionx\fR [-h|--help] | [--version] | [--data-dir \fIdirectory_path\fR] [--save-dir \fIdirectory_path\fR] [--config-dir \fIdirectory_path\fR] [--ttf-dir \fIdirectory_path\fR] [--ttf-name \fIfont_name\fR] [-n] [-f] [-x] [--spawn] [--diablo] [--nestart]
+.SH DESCRIPTION
+DevilutionX is a source port of Diablo and Hellfire that strives to make it simple to run the game while providing engine improvements, bugfixes, and some optional quality of life features.
+
+While most titles from Blizzard receive years of love and support, Diablo stayed in the shadows. Abandoned in favor of a sequel, it remained full of bugs and unfinished potential. The game was last patched in 2001 before being discontinued altogether, a problem I wanted to fix. I played Diablo extensively as a teenager, but as time passed it became difficult to run the game on newer hardware. The lack of many improvements made in Diablo II also laid it to rest. At first the game appeared to be a lost cause, but thankfully a little oversight in 1997 made it not so.
+
+Diablo's development team moved on to Diablo II while passing the source code down to Synergistic Software for Hellfire. Less known however is that it was also given to Climax Studios to create a PlayStation port. Now Sony has long been known for letting things slide; especially in Japan. Anything from leaking prototypes to entire game source codes and Diablo was no exception. Symbolic information was accidentally left on the Japanese port. Normally used for debugging, a symbol file contains a map of everything generated during compile time. This includes file names, functions, structures, variables, and more! To top it all off a special build is hidden on the PC release in DIABDAT.MPQ -> D1221A.MPQ -> DIABLO.EXE! This build contains debug tools and assert strings further giving away code information.
+
+After months of piecing these mistakes together, Devilution was born. I present to you a reconstructed form of Diablo's original source code! Once more shall the heroes of Sanctuary return to the depths below!
+
+DevilutionX is based on the original Devilution project Devilution, and adds support for modern operating systems.
+.SH OPTIONS
+.TP
+.B -h | --help
+Print this message and exit
+.TP
+.B --version
+Print the version and exit
+.TP
+.B --data-dir \fIdirectory_path\fR
+Specify the folder of \fBdiabdat.mpq\fR as \fIdirectory_path\fR
+.TP
+.B --save-dir \fIdirectory_path\fR
+Specify the folder of save files as \fIdirectory_path\fR
+.TP
+.B --config-dir \fIdirectory_path\fR
+Specify the folder of \fBdiablo.ini\fR as \fIdirectory_path\fR
+.TP
+.B --ttf-dir \fIdirectory_path\fR
+Specify the location of the .ttf font as \fIdirectory_path\fR
+.TP
+.B --ttf-name \fIfont_name\fR
+Specify the name of a custom .ttf font as \fIfont_name\fR
+.TP
+.B -n
+Skip startup videos
+.TP
+.B -f
+Display frames per second
+.TP
+.B -x
+Run in windowed mode
+.TP
+.B --spawn
+Force spawn mode even if \fBdiabdat.mpq\fR is found
+.SH HELLFIRE OPTIONS
+.TP
+.B --diablo
+Force diablo mode even if \fBhellfire.mpq\fR is found
+.TP
+.B --nestart
+Use alternate nest palette
+.RE
+.SH BUGS
+Report bugs at https://github.com/diasurgical/devilutionX/
+.SH AUTHORS
+
+Anders Jenbo - "AJenbo"
+.RE
+Andi - "galaxyhaxz"
+.RE
+qndel
+
+.SH THANKS
+
+- Reverse engineered by GalaXyHaXz in 2018
+.RE
+- sanctuary - extensively documenting Diablo's game engine
+.RE
+- BWAPI Team - providing library API to work with Storm
+.RE
+- Ladislav Zezula - reversing PKWARE library, further documenting Storm
+.RE
+- fearedbliss - being awe-inspiring
+.RE
+- Diablodin - providing additional info about the PSX release
+.RE
+- Climax Studios & Sony - secretly helping with their undercover QA :P
+.RE
+- Blizzard North - wait, this was a typo!
+.RE
+- Depression - reason to waste four months of my life doing this ;)
+
+And a special thanks to all the support and people who work on this project to make it possible! <3
